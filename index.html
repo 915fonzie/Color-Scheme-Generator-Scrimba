@@ -1,9 +1,36 @@
 <html>
     <head>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        >
+        <!-- CSS -->
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>index.html</h1>
+        <main>
+            <form id="color-form">
+                <div class="seed-color-wrapper" id="seed-color-wrapper">
+                    <input type="color" id="seed-color"/>
+                </div>
+                <select id="color-scheme" name="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Monochrome Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <input type="submit" value="Get color scheme"/>
+            </form>
+            <div class="colors-container" id="colors-container">
+            </div>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
